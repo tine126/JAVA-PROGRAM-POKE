@@ -1,36 +1,46 @@
 # JAVA-PROGRAM-POKE
-Final assignment
+
 设计思路：
 1.SwingGUI组件使用：
 使用JFrame创建一个窗口：JFramef=newJFrame("卡牌游戏");
 使用JButton创建按钮，并为这些按钮设置图标：wj[i]=newJButton(pkImg);
 使用JLabel来创建可以容纳图片和文本的标签：JLabeljl=newJLabel(bj);
+
 2.布局和组件定位：
 使用null布局手动设置组件位置和大小：cp.setLayout(null);
 使用setBounds方法来指定组件在窗口中的位置和大小：jl.setBounds(0,0,w,h);
+
 3.事件监听和处理：
 为按钮添加ActionListener以响应用户事件：wj[o].addActionListener(newActionListener(){...});
 在事件处理中更新组件状态，例如改变按钮位置或更新标签文本。
+
 4.图像处理：
 通过ImageIcon类来加载图片资源：newImageIcon("img/"+a.c[i]);
 使用getScaledInstance方法调整图像大小以适应按钮。
+
 5.自定义排序：
 使用Arrays.sort和Comparator对数组进行自定义排序：Arrays.sort(c,newComparator<String>(){...});
+
 6.数组和集合操作：
 使用数组来存储和管理卡牌：String[]a=newString[52];
 利用System.arraycopy复制数组元素。
+
 7.面向对象编程：
 将卡牌处理逻辑封装在单独的poke类中。
 在MyFrame2类中创建poke对象，并使用其方法。
+
 8.异常处理：
 使用thrownewIllegalArgumentException抛出异常，以处理不符合预期的情况。
+
 9.设计思路：
 主要集中在如何创建一个基本的卡牌游戏界面和逻辑。窗体MyFrame2是游戏的主要界面，负责展示玩家和电脑的卡牌、处理用户输入和显示游戏状态。poke类则封装了与卡牌操作相关的逻辑，包括制作卡牌、洗牌、发牌和比较卡牌大小等功能。
+
 10.特别之处：
 在模型（poke类）和视图（MyFrame2类中的GUI组件）之间有明确的分离，这有助于代码的组织和后续维护。
 poke类中的findNearestCard方法是一个智能逻辑，用来找出与玩家出的牌最接近的电脑玩家的牌，这样的功能增加了游戏的互动性和复杂性。
 代码在自定义排序和图像处理上显示出了对Swing库的深入使用。
 总的来说，这段代码通过Swing库来构建用户界面，同时使用面向对象的方式来组织游戏逻辑，突显了Java在客户端应用程序开发中的强大能力。
+
 
 项目总结：
 在当今技术不断进步的世界里，掌握编程语言成为了追随时代步伐的重要工具之一。Java，作为一种流行的编程语言，因其强大的功能、跨平台的特性以及广泛的应用领域，一直是我学习计算机编程时的首选语言。
