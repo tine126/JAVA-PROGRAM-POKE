@@ -1,6 +1,7 @@
 # JAVA-PROGRAM-POKE
 
 设计思路：
+
 1.SwingGUI组件使用：
 使用JFrame创建一个窗口：JFramef=newJFrame("卡牌游戏");
 使用JButton创建按钮，并为这些按钮设置图标：wj[i]=newJButton(pkImg);
